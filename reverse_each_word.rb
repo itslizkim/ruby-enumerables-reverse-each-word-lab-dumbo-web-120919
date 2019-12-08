@@ -6,3 +6,13 @@ def reverse_each_word(string)
   end
   result.join(" ")
 end
+
+def reverse_using_collect(string)
+  array = string.split(" ")
+  result = []
+  array.collect do|string|
+    result << string.reversed
+  end
+  result.join(" ")  
+
+end
